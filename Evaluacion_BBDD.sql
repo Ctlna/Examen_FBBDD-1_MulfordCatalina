@@ -5,7 +5,7 @@
 create table Complejo_Deportivo(
 id int auto_increment primary key,
 jefe text,
-areaOcupa int,
+areaOcupa decimal,
 ubicacion text,
 sede int,
 deporte text,
@@ -51,4 +51,10 @@ numItem int,
 cantidad int,
 foreign key (numItem) references ITEM (numero)
 );
+
+insert Complejo_Deportivo values (1,'Nelson Rivero',280,'Cumbre',4,'Basket',300000);
+insert Complejo_Polideportivo values (5,"Claudia Lopez",678,'Rosales',7,'Tenis',650000,56,3);
+insert Evento values (541,25/01/2024,56,25,1546,89);
+
+show * from Evento;
 -- Desarrollado por Catalina Mulford / ID.1.097.490.150
